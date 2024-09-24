@@ -6,7 +6,8 @@
     "start": "concurrently \"ng serve\" \"npm run start --prefix ../curso-de-angular-fake-jwt -- --port 3000\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy:ghdocs": "ng build --configuration production --output-path docs --base-href /sistema-de-login/"
   },
   "private": true,
   "dependencies": {
